@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Auré — considered footwear for the modern wardrobe." />
+  <title>Auré — Luxury footwear, considered.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">Complimentary shipping on orders over $150 <span>✦</span> Easy 30-day returns</div>
+  <header class="site-header">
+    <button class="mobile-menu" aria-label="Open menu">☰</button>
+    <a class="logo" href="#top">AURÉ<span>®</span></a>
+    <nav aria-label="Main navigation"><a href="#shop">Shop</a><a href="#story">Our story</a><a href="#journal">Journal</a></nav>
+    <div class="header-actions"><button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button><button class="icon-btn bag-button" id="bagBtn" aria-label="Shopping bag">Bag <b id="bagCount">0</b></button></div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow">The new collection / 01</p><h1>Walk your<br><em>own</em> way.</h1><p class="hero-text">Quiet confidence, from the ground up. Discover considered footwear made for every chapter of your day.</p><a class="button light" href="#shop">Explore collection <span>↗</span></a></div>
+      <div class="hero-image"><div class="hero-note">01 <span>/</span> 04</div></div>
+    </section>
+
+    <section class="intro" id="story"><p class="eyebrow">Auré / pronounced oh-ray</p><h2>Made to be <em>lived in.</em></h2><p>Thoughtful design. Honest materials. Shoes that get better with every step.</p></section>
+
+    <section class="shop-section" id="shop"><div class="section-heading"><div><p class="eyebrow">Shop all</p><h2>Find your pair.</h2></div><div class="controls"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="sneakers">Sneakers</button><button class="filter" data-filter="loafers">Loafers</button><button class="filter" data-filter="boots">Boots</button><button class="filter" data-filter="sandals">Sandals</button></div></div><div class="product-grid" id="productGrid"></div></section>
+
+    <section class="manifesto"><div class="manifesto-image"></div><div class="manifesto-copy"><p class="eyebrow">The Auré standard</p><h2>Less noise.<br><em>More feeling.</em></h2><p>We design timeless silhouettes with a modern point of view, then make them responsibly in small batches with craftspeople we trust.</p><a class="text-link" href="#story">Discover our story <span>↗</span></a></div></section>
+    <section class="newsletter" id="journal"><p class="eyebrow">Stay in step</p><h2>Notes from Auré.</h2><p>New arrivals, quiet inspirations, and good things worth knowing.</p><form id="newsletterForm"><input type="email" placeholder="Your email address" aria-label="Email address" required><button class="button dark">Sign me up <span>↗</span></button></form><small id="formMessage"></small></section>
+  </main>
+  <footer><a class="logo" href="#top">AURÉ<span>®</span></a><p>Considered footwear for wherever you are going.</p><div><a href="#shop">Shop</a><a href="#story">About</a><a href="#journal">Contact</a></div><small>© 2025 Auré. Made with intention.</small></footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag"><div class="drawer-head"><h2>Your bag <span id="drawerCount">(0)</span></h2><button id="closeBag" aria-label="Close bag">×</button></div><div class="cart-items" id="cartItems"><p class="empty">Your bag is waiting for something special.</p></div><div class="cart-bottom"><div><span>Subtotal</span><strong id="subtotal">$0.00</strong></div><button class="button dark checkout" id="checkoutBtn">Secure checkout <span>↗</span></button><small>Taxes and shipping calculated at checkout.</small></div></aside><div class="overlay" id="overlay"></div>
+  <div class="search-modal" id="searchModal"><button id="closeSearch">×</button><label for="searchInput">Search the collection</label><input id="searchInput" type="search" placeholder="Try “loafer” or “black”"><div id="searchResults"></div></div>
+  <script src="script.js"></script>
+</body></html>
